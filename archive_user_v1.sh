@@ -1,4 +1,6 @@
 #! /bin/bash
+# Author: Sean
+# Date: 10/10/2022
 
 echo "Executing archiving tool: $0"
 echo "Locking password of user $1"
