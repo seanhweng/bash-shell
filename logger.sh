@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 my_logger() {
     local MESSAGE=$@
     echo "$MESSAGE"
