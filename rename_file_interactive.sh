@@ -1,13 +1,13 @@
 #!/bin/bash
 
-read -p "What type of file extension you want to rename: " EXTENSION
+read -p "What type of file extension you want to rename: " file_extension
 
-FILE_LIST=$(ls *.${EXTENSION} 2>/dev/null)
+FILE_LIST=$(ls *.${file_extension} 2>/dev/null)
 DATE=$(date +%F)
 
 if [ -z $FILE_LIST ]
 then
-    echo "No file with extension .${EXTENSION}"
+    echo "No file with extension .${file_extension}"
     exit 1
 fi
 
